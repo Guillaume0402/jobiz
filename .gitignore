@@ -1,1 +1,48 @@
+# === Ignorer les fichiers systèmes ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.log
+
+# === Ignorer les fichiers d'environnement ou secrets ===
+.env
+.env.local
+.env.*.local
+
+# === Ignorer les dépendances Composer ===
+/vendor/
+
+# === Ignorer les fichiers de cache ===
+/cache/
+/tmp/
+/logs/
+/var/
+
+# === Ignorer les fichiers personnels / IDE ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# === Ignorer les fichiers de build ou temporaires ===
+*.bak
+*.tmp
+*.swp
+
+# === Ignorer les fichiers de base de données ou de structure ===
+*.sql
+*.sqlite
+
+# === Ignorer les fichiers PDF ou docs ===
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+
+# === Fichiers spécifiques à ton projet ===
+/Studi - Jobiz - PHP POO.pdf
 /studi_jobiz.sql
+
+# === Ignorer le dossier node_modules si front-end intégré ===
+/node_modules/
