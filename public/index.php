@@ -5,8 +5,12 @@ require_once __DIR__ . '/../vendor/autoload.php';
 // on définit une constante pour le chemin de base qui correspond à la racine de l'application
 define('APP_ROOT', dirname(__DIR__));
 
+use App\Routing\Router;
 
-use App\Controller\PageController;
+$router = new Router();
+$router->handlerRequest($_SERVER["REQUEST_URI"]);
 
-$pageController = new PageController();
-$pageController->home();
+
+// use App\Controller\PageController;
+// $pageController = new PageController();
+// $pageController->home();

@@ -1,0 +1,11 @@
+# Réécriture d'URL 
+# pour diriger les requêtes vers index.php
+# pour que le serveur web puisse traiter les requêtes
+# et les rediriger vers le contrôleur approprié
+
+
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^ index.php [QSA,L]
+
